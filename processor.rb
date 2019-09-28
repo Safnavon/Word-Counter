@@ -10,12 +10,6 @@ class Processor
   end
 
   def process_command(command)
-    return false if command == 'quit'
-
-    # if command == 'print'
-    #   @word_counter.print
-    #   return true
-    # end
     args = command.split(' ')
     return 'Invalid argument count' if args.length < 3
 
@@ -70,7 +64,7 @@ class Processor
       end
     end
     rescue StandardError => e
-      "Network error: #{e}"
+      return "Network error: #{e}"
     end
     process_file(buffer_file_name, target)
     File.delete(buffer_file_name) if File.exist?(buffer_file_name)

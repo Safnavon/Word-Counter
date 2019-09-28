@@ -19,4 +19,6 @@ string banana apple banana orange
 
 url example https://www.example.com/
 
-## note: program is case insensitive and strips non-alphabetical characters
+## notes: 
+## program is case insensitive and strips non-alphabetical characters
+## can only handle .txt files

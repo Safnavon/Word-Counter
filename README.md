@@ -4,20 +4,24 @@
 
 To run program: "ruby main.rb"
 
-Program receives a command in the form: TYPE VALUE SOURCE
-and accumulates number of occurences of VALUE in SOURCE
+Program receives a command in the form: TYPE SOURCE
+and accumulates all word occurrences in SOURCE
 
-can also print via "print" command or terminate with "quit" command
+can also print via "print WORD" command or terminate with "quit" command
 
 valid TYPE values are: url\string\file
 
 Example commands:
 
-file my test.txt
+file test.txt
 
-string banana apple banana orange
+string apple banana orange
 
-url example https://www.example.com/
+url https://www.example.com/
+
+print who
+
+quit
 
 ## notes: 
 ## program is case insensitive and strips non-alphabetical characters

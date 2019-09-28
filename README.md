@@ -7,6 +7,8 @@ To run program: "ruby main.rb"
 Program receives a command in the form: TYPE VALUE SOURCE
 and accumulates number of occurences of VALUE in SOURCE
 
+can also print via "print" command or terminate with "quit" command
+
 valid TYPE values are: url\string\file
 
 Example commands:

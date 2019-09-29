@@ -52,6 +52,8 @@ class WordCounter
   def get_word(word)
     word_hash = Digest::SHA1.hexdigest(word)
     word_file_path = ROOT_DATA_FOLDER + word_hash
+    return '0' unless File.exist?(word_file_path)
+
     word_file = File.open(word_file_path)
     words = word_file.readlines
     word_index = words.index(word + "\n")

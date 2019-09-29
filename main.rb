@@ -22,7 +22,6 @@ puts(INSTRUCTIONS_MSG)
 
 # main read command loop
 # I've assumed that a single program serving both purposes is fine
-# otherwise, i would have persisted results from first program to a file and read it with the second one
 loop do
   # read input from cmd
   command = gets.chomp
@@ -34,3 +33,4 @@ loop do
 end
 
 puts('Terminating')
+word_counter.clean

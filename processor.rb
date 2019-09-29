@@ -15,7 +15,7 @@ class Processor
 
     if args[0] == 'print'
       target = args[1].downcase
-      return "The word #{target} appeared #{@word_counter.get[target]} times"
+      return "The word #{target} appeared #{@word_counter.get_word(target)} times"
     end
 
     type, source = args
@@ -80,6 +80,10 @@ class Processor
   def add_target(string)
     clean_string = string.downcase.gsub(/[^a-z ]/i, ' ')
     clean_string.split(' ').each { |word| @word_counter.add_word(word) }
+  end
+
+  def clean
+    @word_counter.clean
   end
 
 end

@@ -5,7 +5,7 @@
 To run program: "ruby main.rb"
 
 Program receives a command in the form: TYPE SOURCE
-and accumulates all word occurrences in SOURCE
+and accumulates all word occurrences in SOURCE (using disk to support large input)
 
 can also print via "print WORD" command or terminate with "quit" command
 

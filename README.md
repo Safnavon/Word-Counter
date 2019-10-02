@@ -1,13 +1,16 @@
 # Lemonade
 
-## Ruby v2.6.4
+#### Ruby v2.6.4
 
 To run program: "ruby main.rb"
 
 Program receives a command in the form: TYPE SOURCE
 and accumulates all word occurrences in SOURCE (using disk to support large input)
 
-can also print via "print WORD" command or terminate with "quit" command
+##### Other commands:
+- "print WORD" prints total WORD count
+- "quit" terminates the program
+- "clean" resets counter (cleans data folder)
 
 valid TYPE values are: url\string\file
 
@@ -24,5 +27,6 @@ print who
 quit
 
 ## notes: 
-## program is case insensitive and strips non-alphabetical characters
-## can only handle .txt files
+### program is case insensitive and strips non-alphabetical characters
+### can only handle .txt files
+### counter persists until "clean" is called

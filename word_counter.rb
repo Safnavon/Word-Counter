@@ -66,5 +66,8 @@ class WordCounter
   # delete temp data folder
   def clean
     FileUtils.rm_rf("#{ROOT_DATA_FOLDER}/.", secure: true)
+    unless File.directory?(ROOT_DATA_FOLDER)
+      FileUtils.mkdir_p(ROOT_DATA_FOLDER)
+    end
   end
 end

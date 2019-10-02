@@ -27,10 +27,17 @@ loop do
   command = gets.chomp
   break if command == 'quit'
 
-  # keep reading commands unless 'quit' command received
+  if command == 'clean'
+    puts('Cleaning...')
+    word_counter.clean
+    puts('Cleaned data folder')
+    next
+  end
+
+    # keep reading commands unless 'quit' command received
   puts(processor.process_command(command))
   puts('Enter next command')
 end
 
 puts('Terminating')
-word_counter.clean
+# word_counter.clean

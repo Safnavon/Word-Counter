@@ -15,6 +15,7 @@ file test.txt
 string apple banana orange
 url https://www.example.com/
 print my
+clean
 ##################################################"
 
 
